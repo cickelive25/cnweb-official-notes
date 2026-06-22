@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界杯 – 稳定入口与观赛指引</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fafaf9;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #1e1e1e;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 1.8rem 4rem;
+    }
+
+    /* hero 区域 —— 克制留白，弱化装饰 */
+    .hero {
+      padding: 3.6rem 0 3rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.2rem;
+      color: #111;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #3d3d3d;
+      max-width: 600px;
+    }
+
+    .hero p a {
+      color: #1a4b8c;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(26, 75, 140, 0.25);
+      transition: border-color 0.2s;
+    }
+
+    .hero p a:hover {
+      border-color: #1a4b8c;
+    }
+
+    /* 通用章节 */
+    section {
+      padding: 2.8rem 0;
+      border-bottom: 1px solid #ededed;
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 520;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.2rem;
+      color: #1f1f1f;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 520;
+      margin-bottom: 0.6rem;
+      color: #2a2a2a;
+    }
+
+    p, li {
+      color: #3b3b3b;
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem 2.2rem;
+      margin-top: 1rem;
+    }
+
+    .feature-item {
+      background: #ffffff;
+      padding: 1.4rem 1.6rem;
+      border-radius: 12px;
+      border: 1px solid #eaeaea;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .feature-item p {
+      font-size: 0.95rem;
+      color: #4a4a4a;
+    }
+
+    .scenario-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .scenario-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .scenario-card .num {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #9c9c9c;
+      min-width: 2rem;
+      line-height: 1.6;
+    }
+
+    .scenario-card .desc {
+      flex: 1;
+    }
+
+    .scenario-card .desc strong {
+      font-weight: 530;
+      color: #222;
+    }
+
+    .faq-block {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    .faq-item {
+      border-left: 3px solid #d4d4d4;
+      padding-left: 1.2rem;
+    }
+
+    .faq-item .q {
+      font-weight: 520;
+      margin-bottom: 0.3rem;
+      color: #1e1e1e;
+    }
+
+    .faq-item .a {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .faq-item .a a {
+      color: #1a4b8c;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(26, 75, 140, 0.25);
+    }
+
+    .faq-item .a a:hover {
+      border-bottom-color: #1a4b8c;
+    }
+
+    .foot-links {
+      padding-top: 2rem;
+      font-size: 0.9rem;
+      color: #6e6e6e;
+      border-top: 1px solid #e8e8e8;
+      margin-top: 1.2rem;
+    }
+
+    .foot-links a {
+      color: #4a4a4a;
+      text-decoration: none;
+      border-bottom: 1px dotted #c0c0c0;
+    }
+
+    .foot-links a:hover {
+      color: #1a4b8c;
+      border-bottom-color: #1a4b8c;
+    }
+
+    .foot-links span {
+      margin: 0 0.6rem;
+      color: #cccccc;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 2rem 1.2rem 3rem;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .hero {
+        padding: 2rem 0 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- hero 区 -->
+    <header class="hero">
+      <h1>世界杯 · 稳定入口与页面说明</h1>
+      <p>
+        无论你身在何处，<a href="https://cnweb-official-fifaworldcup.com">世界杯</a>始终是全世界球迷的盛会。这里整理了一份简单、清晰的指引，帮助你快速了解赛事资讯、赛程安排与观赛方式。所有信息均以官方页面为准。
+      </p>
+    </header>
+
+    <!-- 优势区：为什么选择这个入口 -->
+    <section>
+      <h2>为什么值得关注这个页面</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h3>直接访问</h3>
+          <p>提供最简洁的导航路径，无需层层跳转，即可抵达赛事核心内容区域。</p>
+        </div>
+        <div class="feature-item">
+          <h3>信息一致</h3>
+          <p>页面结构保持与官方更新节奏同步，减少信息滞后带来的困扰。</p>
+        </div>
+        <div class="feature-item">
+          <h3>低干扰</h3>
+          <p>页面采用极简视觉风格，重点突出文字与链接，避免无关元素分散注意力。</p>
+        </div>
+        <div class="feature-item">
+          <h3>适合多种设备</h3>
+          <p>从手机到桌面显示器，排版自动适应，阅读体验不妥协。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 说明区：主要场景与使用方法 -->
+    <section>
+      <h2>常见使用场景</h2>
+      <div class="scenario-list">
+        <div class="scenario-card">
+          <span class="num">01</span>
+          <div class="desc">
+            <strong>快速确认赛程</strong><br>
+            比赛日当天，打开页面即可找到最新对阵信息与开球时间，无需额外搜索。
+          </div>
+        </div>
+        <div class="scenario-card">
+          <span class="num">02</span>
+          <div class="desc">
+            <strong>获取官方动态</strong><br>
+            页面汇总了来自赛事方的公告与说明，适合希望第一时间了解规则变化或票务消息的用户。
+          </div>
+        </div>
+        <div class="scenario-card">
+          <span class="num">03</span>
+          <div class="desc">
+            <strong>分享给朋友</strong><br>
+            将 <a href="https://cnweb-official-fifaworldcup.com">世界杯</a> 链接直接分享，对方打开即看到清晰的信息框架，省去解释时间。
+          </div>
+        </div>
+      </div>
+      <p style="margin-top: 1.6rem; font-size: 0.95rem; color: #555;">
+        如果你只是偶尔关注赛事，不希望安装额外应用，这个页面同样可以作为轻量级的信息锚点。
+      </p>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+      <h2>常见疑问摘要</h2>
+      <div class="faq-block">
+        <div class="faq-item">
+          <p class="q">这个页面是官方吗？</p>
+          <p class="a">本页为介绍与指引页面，所有赛事信息最终以 <a href="https://cnweb-official-fifaworldcup.com">世界杯</a> 官方渠道发布的公告为准。</p>
+        </div>
+        <div class="faq-item">
+          <p class="q">页面里的链接会变化吗？</p>
+          <p class="a">链接指向固定域名，内容由赛事方维护。如果未来入口有调整，页面会同步更新说明。</p>
+        </div>
+        <div class="faq-item">
+          <p class="q">我可以收藏这个页面吗？</p>
+          <p class="a">当然可以。将它加入浏览器书签或手机主屏幕，每次想了解世界杯动态时就能直接打开。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 底部链接 -->
+    <footer class="foot-links">
+      <a href="https://cnweb-official-fifaworldcup.com">世界杯</a>
+      <span>·</span>
+      <a href="#">比赛日程</a>
+      <span>·</span>
+      <a href="#">赛果查询</a>
+      <span>·</span>
+      <a href="#">关于本页</a>
+      <br>
+      <span style="display: inline-block; margin-top: 0.6rem;">&copy; 指引页 · 内容仅供信息参考</span>
+    </footer>
+  </div>
+</body>
+</html>
